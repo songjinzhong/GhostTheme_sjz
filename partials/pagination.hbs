@@ -1,0 +1,8 @@
+<nav class="pagination" role="navigation">
+    {{#if prev}}
+        <a class="newer-posts" href="{{page_url prev}}"><i class="fa fa-chevron-left"></i> 前一页</a>
+    {{/if}}
+    {{#if next}}
+        <a class="older-posts" href="{{page_url next}}">后一页 <i class="fa fa-chevron-right"></i></a>
+    {{/if}}
+</nav>

@@ -1,0 +1,134 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+<div class="reading-time-indicator js-post-sticky-header">
+    <div class="post-reading-time js-post-reading-time">
+        <div class="percent js-percent-count">0%</div>
+        <progress value="0" class="read-progress-indicator single" max="12982">
+            <div class="progress-container">
+                <span class="progress-bar"></span>
+            </div>
+        </progress>
+        <div class="read-estimation">
+            <div class="reading-time-blog-logo">
+                <a class="blog-logo" href="javascript:history.go(-1)"><i class="fa fa fa-chevron-left"></i></a>
+            </div>
+            <div class="read-estimation-content">
+                <div class="estimated-time">
+                    <span class="js-word-count">3245</span> 字 --- 耗时<span class="eta">5 分钟</span>.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="main-nav">
+    <a href="{{@blog.url}}" class="header-back-btn js-bg-check left">
+        <i class="fa fa-chevron-left"></i> 主页
+    </a>
+    {{> "menu-activator-icon"}}
+</nav>
+<header class="post-view-header js-blog-bg-image {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+    <div class="post-header-content">
+        <h1 class="post-title js-bg-check">{{title}}</h1>
+        <section class="post-meta js-bg-check">
+            <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="YYYY-MM-DD"}}</time>
+        </section>
+    </div>
+</header>
+
+<main class="post-view-content" role="main">
+
+    <article class="{{post_class}}">
+
+        <section class="post-content row">
+            <div class="sjz-columns small-12 columns">{{content}}</div>
+        </section>
+
+        <footer class="post-footer row">
+            <div class="small-12 columns">
+                <section class="sjz-post-tags post-tags">
+                    {{tags prefix="本文标签: "}}
+                </section>
+
+                <section class="share">
+                    <h5>分享这篇文章:</h5>
+                    <a class="icon-weibo" href="http://service.weibo.com/share/share.php?url={{encode title}}&amp;url={{url absolute="true"}}"
+                        onclick="window.open(this.href);return false;" target="_blank">
+                        <span class="hidden"><i class="fa fa-weibo"></i></span>
+                    </a>
+                    <a class="icon-qzone" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{url absolute="true"}}"
+                        onclick="window.open(this.href);return false;">
+                        <span class="hidden"><i class="fa fa-qq"></i></span>
+                    </a>
+                    <a class="icon-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}"
+                       onclick="window.open(this.href);return false;">
+                        <span class="hidden"><i class="fa fa-google-plus-square"></i></span>
+                    </a>
+                </section>
+            </div>
+        </footer>
+
+        <div class="row post-prev-next-pagination">
+            <div class="prev small-6 columns text-left">
+                {{#prev_post}}
+                    {{!-- you can use here {{image}} too --}}
+                    <div class="prev-next-label">
+                        <a href="{{url}}">
+                            <i class="fa fa-angle-double-left"></i> 前一篇
+                        </a>
+                    </div>
+                    <a href="{{url}}" class="title">
+                        {{title}}
+                    </a>
+                {{/prev_post}}
+            </div>
+            <div class="next small-6 columns text-right">
+                {{#next_post}}
+                    {{!-- you can use here {{image}} too --}}
+                    <div class="prev-next-label">
+                        <a href="{{url}}">
+                            后一篇 <i class="fa fa-angle-double-right"></i>
+                        </a>
+                    </div>
+                    <a href="{{url}}" class="title">
+                        {{title}}
+                    </a>
+                {{/next_post}}
+            </div>
+        </div>
+
+        {{! Everything inside the #author tags pulls data from the author }}
+        {{#author}}
+            <section class="author-info">
+                <div class="row">
+                    <section class="post-author small-12 columns">
+                        {{#if image}}
+                            <img src="{{image}}" class="post-author-avatar" alt="{{name}}">
+                        {{/if}}
+                        {{#if name}}
+                            <span class="author-label">作者</span>
+                            <h1><a href="{{url}}" class="author-link-name">{{name}}</a></h1>
+                        {{/if}}
+                        {{#if website}}
+                            <p><a href="{{website}}" class="author-website">{{website}}</a></p>
+                        {{/if}}
+                        {{#if bio}}
+                            <p>{{bio}}</p>
+                        {{/if}}
+                    </section>
+                </div>
+            </section>
+        {{/author}}
+
+        {{!多说评论代码}}
+        {{> duoshuo}}
+
+    </article>
+
+</main>
+
+{{/post}}

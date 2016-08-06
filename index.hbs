@@ -1,0 +1,48 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The big featured header }}
+<nav class="main-nav">
+    {{> "menu-activator-icon"}}
+</nav>
+
+<header class="main-header js-blog-bg-image {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <div class="main-header-content">
+        {{#if @blog.logo}}
+        <div class="post-logo-container">
+            <a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>
+        </div>
+        {{/if}}
+        <h1 class="page-title js-bg-check"><span>{{@blog.title}}</span></h1>
+        <h2 class="page-description js-bg-check"><span>{{@blog.description}}</span></h2>
+        <div class="header-social-icons">
+            <a href="mailto:songjz.ecnu@gmail.com" title="E-Mail address" target="_blank">
+                <i class="fa fa-fw fa-envelope-o"></i>
+            </a>
+            <a href="https://github.com/songjinzhong" title="Github Address"  target="_blank">
+                <i class="fa fa-fw fa-github"></i>
+            </a>
+            <a href="http://weibo.com/3822969136" title="WeiBo Address"  target="_blank">
+                <i class="fa fa-fw fa-weibo"></i>
+            </a>
+            <a href="https://www.facebook.com/songjinzhong" title="Facebook Address" target="_blank">
+                <i class="fa fa-fw fa-facebook"></i>
+            </a>
+            <a href="https://plus.google.com/u/0/112465444780979672886" title="Google Plus Address" target="_blank">
+                <i class="fa fa-fw fa-google-plus"></i>
+            </a>
+            <a href="/rss" title="RSS">
+                <i class="fa fa-fw fa-rss"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+{{! The main content area on the homepage }}
+<main id="content" class="content home-template" role="main">
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> "loop"}}
+</main>
+
+{{!-- GitHub badge (remove it) --}}
+<a href="http://songjz.cn/"><img style="position: absolute; top: 0; left: 0; border: 0;" src="/assets/images/homepage.png" alt="Visit My Home Page"></a>
