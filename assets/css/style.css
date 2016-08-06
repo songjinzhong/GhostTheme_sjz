@@ -8089,3 +8089,12 @@ body {
 	max-width: 50rem;
 	width: 100%
 }
+.ds-powered-by a{
+	display: none	
+}
+.ds-like-tooltip {
+	display: none
+}
+.ds-dialog-footer {
+	display: none
+}
