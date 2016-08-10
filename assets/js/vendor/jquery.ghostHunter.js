@@ -61,19 +61,19 @@
 			//This is where we'll build the index for later searching. It's not a big deal to build it on every load as it takes almost no space without data
 			if (this.globalSearch) {
 				this.index = lunr(function () {
-				    this.field('title', {boost: 10});
+				    //this.field('title', {boost: 10});
 				    this.field('description');
 				    //this.field('content');
-				    this.field('link');
+				    //this.field('link');
 				    this.field('category');
 				    //this.field('pubDate');
 				    this.ref('id');
 				});
 			} else {
 				this.index = lunr(function () {
-				    this.field('title', {boost: 10});
+				    //this.field('title', {boost: 10});
 				    this.field('description');
-				    this.field('link');
+				    //this.field('link');
 				    this.field('category');
 				    //this.field('pubDate');
 				    this.ref('id');
@@ -124,25 +124,26 @@
 			        if (globalSearch) {
 						parsedData 	= {
 							id: i+1,
-							title 		: post.find('title').text(),
-							description	: $(post.find('description').text()).text().substr(0, maxLength),
+							//title 		: post.find('title').text(),
+							description	: post.find('description').text(),
 							//content     : post.find('encoded').text(),
-							category 	: post.find("category").toArray().map(function(v) { return v.textContent }).join(separator),
+							category 	: post.find("category").toArray().map(function(v) { return v.textContent }).join(" "),
 							//pubDate 	: new Date(post.find('pubDate').text()).toLocaleDateString(),
-							link 		: post.find('link').text()
+							//link 		: post.find('link').text()
 						};
 			        } else {
 						parsedData 	= {
 							id: i+1,
-							title 		: post.find('title').text(),
-							description	: $(post.find('description').text()).text().substr(0, maxLength),
-							category 	: post.find("category").toArray().map(function(v) { return v.textContent }).join(separator),
+							//title 		: post.find('title').text(),
+							description	: post.find('description').text(),
+							category 	: post.find("category").toArray().map(function(v) { return v.textContent }).join(" "),
 							//pubDate 	: new Date(post.find('pubDate').text()).toLocaleDateString(),
 							//link 		: post.find('link').text()
 						};
 			        }
-
 				    index.add(parsedData);
+				    parsedData.link=post.find('link').text();
+				    parsedData.title=post.find('title').text();
 				    blogData.push(parsedData);
 			    };
 
