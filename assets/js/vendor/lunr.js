@@ -152,6 +152,7 @@ lunr.tokenizer = function (obj) {
     .map(function (token) {
       return token.replace(/[\ |\~|\`|\!|\@|\#|\$|\%|\^|\&|\*|\uFE30-\uFFA0|\(|\)|\-|\_|\+|\=|\||\\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?]/g, '').toLowerCase()
     });
+  //在这里加入中文分词算法
 	return rs;
 	
 }
