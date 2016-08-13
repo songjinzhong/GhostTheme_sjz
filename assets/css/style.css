@@ -7792,7 +7792,7 @@ body {
 	height:4.5rem;
 	font-size:1.6rem;
 	padding:3.25rem 0 1.25rem 0;
-	font-weight:900;
+	font-weight:normal;
 	background-color:transparent;
 	box-shadow:none;
 	border:0;
@@ -7838,8 +7838,8 @@ body {
 	color:#ffffff;
 }
 .big-search .big-search-container .big-search-results>p {
-	font-weight:600;
 	font-size:0.9rem;
+	margin-bottom: 0
 }
 .big-search .big-search-container .big-search-results a {
 	color:#ffffff;
@@ -7853,8 +7853,7 @@ body {
 	transition:color .3s
 }
 .big-search .big-search-container .big-search-results a h2 {
-	font-size:1.15rem;
-	font-weight:600;
+	font-size:1.15rem
 }
 .big-search .big-search-container .big-search-results a:hover,.big-search .big-search-container .big-search-results a:active,.big-search .big-search-container .big-search-results a:focus {
 	text-decoration:none

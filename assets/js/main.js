@@ -63,7 +63,7 @@ var jcw = (function ($) {
         var ghostHunter = $('.js-search-input').ghostHunter({
             results: '.js-search-results',
             info_template:"<p>搜索结果 : {{amount}}</p>",
-            result_template: '<a href="{{link}}"><p><h2><i class="fa fa-fw fa-dot-circle-o"></i> {{title}}</h2></p></a>',
+            result_template: '<a href="{{link}}"><h2><i class="fa fa-fw fa-dot-circle-o"></i> {{title}}</h2></a>',
             onKeyUp: true
         });
         $openSearchBtn.on('click', function (e) {
