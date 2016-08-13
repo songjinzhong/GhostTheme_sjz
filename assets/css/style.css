@@ -1292,7 +1292,6 @@ select {
 	background:#EFEFEF;
 	color:#222222;
 	display:block;
-	font-family:'Lora',serif;
 	font-size:1rem;
 	padding:1rem
 }
@@ -1820,7 +1819,6 @@ button,.button {
 	border-style:solid;
 	border-width:0;
 	cursor:pointer;
-	font-family:'Lora',serif;
 	font-weight:normal;
 	line-height:normal;
 	margin:0 0 1.25rem;
@@ -3914,7 +3912,6 @@ label.error {
 }
 .label {
 	display:inline-block;
-	font-family:'Lora',serif;
 	font-weight:normal;
 	line-height:1;
 	margin-bottom:auto;
@@ -4361,7 +4358,6 @@ ul.pagination li {
 .pricing-table .title {
 	background-color:#333333;
 	color:#EEEEEE;
-	font-family:'Lora',serif;
 	font-size:1rem;
 	font-weight:normal;
 	padding:0.9375rem 1.25rem;
@@ -4370,7 +4366,6 @@ ul.pagination li {
 .pricing-table .price {
 	background-color:#F6F6F6;
 	color:#333333;
-	font-family:'Lora',serif;
 	font-size:2rem;
 	font-weight:normal;
 	padding:0.9375rem 1.25rem;
@@ -4665,7 +4660,6 @@ ul.pagination li {
 }
 .side-nav {
 	display:block;
-	font-family:'Lora',serif;
 	list-style-position:outside;
 	list-style-type:none;
 	margin:0;
@@ -4691,7 +4685,6 @@ ul.pagination li {
 }
 .side-nav li.active>a:first-child:not(.button) {
 	color:#ee5c7b;
-	font-family:'Lora',serif;
 	font-weight:normal
 }
 .side-nav li.divider {
@@ -4840,7 +4833,6 @@ ul.pagination li {
 .sub-nav dt,.sub-nav dd,.sub-nav li {
 	color:#999999;
 	float:left;
-	font-family:'Lora',serif;
 	font-size:0.875rem;
 	font-weight:normal;
 	margin-left:1rem;
@@ -5057,7 +5049,6 @@ table thead tr th,table tfoot tr th,table tfoot tr td,table tbody tr th,table tb
 	display:block;
 	background-color:#EFEFEF;
 	color:#222222;
-	font-family:'Lora',serif;
 	font-size:1rem;
 	padding:1rem 2rem
 }
@@ -5413,7 +5404,6 @@ table thead tr th,table tfoot tr th,table tfoot tr td,table tbody tr th,table tb
 .top-bar-section ul li>a {
 	color:#FFFFFF;
 	display:block;
-	font-family:'Lora',serif;
 	font-size:0.8125rem;
 	font-weight:normal;
 	padding-left:0.9375rem;
@@ -7160,7 +7150,6 @@ body {
 	text-decoration:none;
 	border-radius:0.1875rem;
 	font-size:1rem;
-	font-family:'Source Sans Pro',sans-serif;
 	font-weight:700;
 	text-transform:uppercase;
 	margin-left:1.875rem;
@@ -7261,7 +7250,6 @@ body {
 }
 .main-header .author-stats {
 	font-size:1.25rem;
-	font-family:'Source Sans Pro',sans-serif;
 	font-weight:700
 }
 @media screen and (min-width: 48em) {
@@ -7337,7 +7325,6 @@ body {
 	overflow-x:hidden
 }
 .post-template .post-meta {
-	font-family:'Source Sans Pro',sans-serif;
 	font-weight:700;
 	font-size:1.125rem;
 	margin-top:1.875rem
@@ -7393,7 +7380,6 @@ body {
 	background-color:#000
 }
 .post-template .post-footer .post-tags {
-	font-family:'Source Sans Pro',sans-serif;
 	font-weight:700
 }
 .post-template .post-footer .post-tags a {
@@ -7459,7 +7445,6 @@ body {
 .author-info .post-author h1 {
 	margin:0;
 	padding:0;
-	font-family:'Source Sans Pro',sans-serif;
 	font-weight:700;
 	text-transform:uppercase;
 	font-size:2.25rem
@@ -7494,7 +7479,6 @@ body {
 }.tag-view-info {
 	font-size:1.625rem;
 	text-align:center;
-	font-family:'Source Sans Pro',sans-serif;
 	font-weight:700;
 	background:#e6e6e6;
 	padding:2.5rem 1.875rem;
@@ -7536,7 +7520,6 @@ body {
 	text-align:center;
 	color:#000;
 	font-weight:bold;
-	font-family:'Source Sans Pro',sans-serif
 }
 .pagination a,.pagination a:active,.pagination a:focus,.pagination a:hover {
 	color:inherit;
@@ -7741,7 +7724,6 @@ body {
 	border-radius:0.1875rem;
 	text-decoration:none;
 	margin-bottom:0.625rem;
-	font-family:'Source Sans Pro',sans-serif;
 	font-weight:600;
 	transition:background-color .15s,color .15s
 }
@@ -7766,7 +7748,7 @@ body {
 	min-height:100%;
 	top:0;
 	left:0;
-	background:rgba(0,0,0,0.95);
+	background:rgba(0,0,0,0.85);
 	-webkit-user-select:none;
 	user-select:none;
 	opacity:0;
@@ -7815,7 +7797,6 @@ body {
 	box-shadow:none;
 	border:0;
 	border-bottom:0.1875rem solid #ffffff;
-	font-family:'Source Sans Pro',sans-serif
 }
 .big-search .big-search-container .big-search-form-input:focus {
 	box-shadow:none;
@@ -7855,7 +7836,6 @@ body {
 }
 .big-search .big-search-container .big-search-results {
 	color:#ffffff;
-	font-family:'Source Sans Pro',sans-serif
 }
 .big-search .big-search-container .big-search-results>p {
 	font-weight:600;
@@ -7945,7 +7925,6 @@ body {
 	font-size:1.0rem;
 	font-weight:600;
 	padding-right:0.9375rem;
-	font-family:'Source Sans Pro',sans-serif;
 	color:#000
 }
 .reading-time-indicator .post-reading-time .read-estimation {
@@ -7979,7 +7958,6 @@ body {
 }
 .reading-time-indicator .post-reading-time .read-estimation .read-estimation-content .title {
 	font-weight:400;
-	font-family:'Source Sans Pro',sans-serif;
 	line-height:1.1;
 	font-size:1rem;
 	font-weight:600
@@ -7987,7 +7965,6 @@ body {
 .reading-time-indicator .post-reading-time .read-estimation .read-estimation-content .estimated-time {
 	font-weight:600;
 	opacity:.6;
-	font-family:'Source Sans Pro',sans-serif;
 	font-size:0.875rem
 }
 .reading-time-indicator .post-reading-time .read-progress-indicator {
