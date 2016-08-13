@@ -1,17 +1,28 @@
 'use strict';
 
 var jcw = (function ($) {
-
+    //定义一个冒泡事件，用来实现点击菜单栏以外的区域关闭菜单栏
+    function stopFunc(e){   
+        e.stopPropagation?e.stopPropagation():e.cancelBubble = true;       
+    }
     var
     mainMenu = function () {
+        //实现点击其他按钮，菜单栏关闭
+        document.onclick = function(e){
+            menuOvrl.removeClass('open');
+        }
         var menuOvrl = $('.js-main-menu-ovrl');
         $('.js-main-menu-open').on('click', function (e) {
             e.preventDefault();
             menuOvrl.addClass('open');
+            e = e||event; stopFunc(e);
         });
         $('.js-main-menu-close').on('click', function (e) {
             e.preventDefault();
             menuOvrl.removeClass('open');
+        });
+        menuOvrl.on('click',function(e){
+            e = e||event; stopFunc(e);
         });
     },
 
