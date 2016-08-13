@@ -161,17 +161,6 @@ var jcw = (function ($) {
         }
     },
 
-    promo = function () {
-        var $promoPxt = $('.promo-pxt');
-        var $promoHire = $('.promo-hire');
-        var $promoChat = $('.promo-chat');
-        if ($promoPxt.length && $promoHire.length && $promoChat) {
-            $promoPxt.addClass('visible');
-            $promoHire.addClass('visible');
-            $promoChat.addClass('visible');
-        }
-    },
-
     // jcw javascripts initialization
     init = function () {
         mainMenu();
@@ -182,7 +171,6 @@ var jcw = (function ($) {
         goToTop();
         positionIndicator();
         readingTime();
-        promo();
     };
 
     return {
