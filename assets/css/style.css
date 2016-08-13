@@ -7558,10 +7558,8 @@ body {
 	color:#ffffff
 }
 .main-menu-ovrl {
-	max-width: 150px;
 	position:absolute;
-	width:100%;
-	padding-bottom: 50px;
+	width:auto;
 	top:0;
 	right:0;
 	background:white;
@@ -7585,7 +7583,7 @@ body {
 }
 .main-menu-ovrl nav {
 	text-align:center;
-	margin-top: 100px
+	margin-top: 89px
 }
 .main-menu-ovrl ul {
 	list-style:none;
@@ -8014,19 +8012,19 @@ body {
   margin-bottom: 0.875rem;
 }
 .post-template .post-view-header .post-header-content h1 {
-	font-size: 2.1rem;
+	font-size: 1.9rem;
 	line-height: 1.2;
 }
 /*this is my min and max css*/
 @media screen and (min-width: 30em) {
 	.post-template .post-view-header .post-header-content h1 {
-	font-size: 2.9rem;
+	font-size: 2.5rem;
 	line-height: 1.2;
 }
 }
 @media screen and (min-width: 48em) {
 	.post-template .post-view-header .post-header-content h1 {
-		font-size: 3.7rem;
+		font-size: 3.3rem;
 		line-height: 1.2;
 	}
 }
