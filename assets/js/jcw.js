@@ -91,11 +91,14 @@ var jcw = (function ($) {
     positionIndicator = function () {
         if ($('.js-post-reading-time').is(':visible')) {
             imagesLoaded('.post-content', function () {
+                var getHeader = function() {
+                    return $('header').height()+240
+                }
                 var getMax = function() {
                     return $('.post-content').height();
                 };
                 var getValue = function() {
-                    return $(window).scrollTop();
+                    return $(window).scrollTop()-getHeader();
                 };
                 var progressBar, max, value, width, percent;
                 if('max' in document.createElement('progress')){
@@ -106,7 +109,7 @@ var jcw = (function ($) {
                     $(document).on('scroll', function(){
                         // On scroll only Value attr needs to be calculated
                         progressBar.attr({ value: getValue() });
-                        percent = Math.floor(((getValue()-400) / getMax()) * 100) ;
+                        percent = Math.floor((getValue() / getMax()) * 100) ;
                         if (percent < 0) {
                             percent = 0;
                             $('.js-post-sticky-header').removeClass('visible');
