@@ -26,7 +26,7 @@ Licensed under the MIT license
             wordCountTarget: null,
             wordsPerMinute: 600,
             round: true,
-            lang: 'en',
+            lang: 'cn',
             lessThanAMinuteString: '',
             prependTimeString: '',
             prependWordString: '',
@@ -56,42 +56,13 @@ Licensed under the MIT license
         var remoteTarget = plugin.settings.remoteTarget;
 
 
-        //if lang is set to italian
-        if(lang == 'it') {
+        if(lang == 'cn') {
 
-            var lessThanAMinute = lessThanAMinuteString || "Meno di un minuto";
+            var lessThanAMinute = lessThanAMinuteString || "小于1分钟";
 
-            var minShortForm = 'min';
+            var minShortForm = '分钟';
 
-        //if lang is set to french
-        } else if(lang == 'fr') {
-
-            var lessThanAMinute = lessThanAMinuteString || "Moins d'une minute";
-
-            var minShortForm = 'min';
-
-        //if lang is set to german
-        } else if(lang == 'de') {
-
-            var lessThanAMinute = lessThanAMinuteString || "Weniger als eine Minute";
-
-            var minShortForm = 'min';
-
-        //if lang is set to spanish
-        } else if(lang == 'es') {
-
-            var lessThanAMinute = lessThanAMinuteString || "Menos de un minuto";
-
-            var minShortForm = 'min';
-
-        //if lang is set to dutch
-        } else if(lang == 'nl') {
-
-            var lessThanAMinute = lessThanAMinuteString || "Minder dan een minuut";
-
-            var minShortForm = 'min';
-
-        //default lang is english
+        //default lang is cn
         } else {
 
             var lessThanAMinute = lessThanAMinuteString || '小于1分钟';
