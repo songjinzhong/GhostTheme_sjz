@@ -7558,42 +7558,6 @@ body {
 	-webkit-transform:translateX(-0.3125rem);
 	transform:translateX(-0.3125rem)
 }
-.rborder,.lborder,.tborder,.bborder {
-	z-index: 4;
-	background:#000;
-	-webkit-transform:translateZ(0);
-	transform:translateZ(0);
-	display: none
-}
-@media screen and (min-width: 48em) {
-	.rborder,.lborder,.tborder,.bborder {
-		display:block
-	}
-}
-.rborder,.lborder {
-	position:fixed;
-	top:0;
-	bottom:0;
-	width:0.7375rem
-}
-.rborder {
-	right:0
-}
-.lborder {
-	left:0
-}
-.tborder,.bborder {
-	position:fixed;
-	left:0;
-	right:0;
-	height:0.7375rem
-}
-.tborder {
-	top:0
-}
-.bborder {
-	bottom:0
-}
 .main-nav .fa-bars {
 	cursor:pointer;
 	margin-right:1.875rem;
