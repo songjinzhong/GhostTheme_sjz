@@ -7583,7 +7583,8 @@ body {
 }
 .main-menu-ovrl nav {
 	text-align:center;
-	margin-top: 89px
+	margin-top: 89px;
+	margin-right: 2px
 }
 .main-menu-ovrl ul {
 	list-style:none;
@@ -7597,10 +7598,10 @@ body {
 }
 .main-menu-ovrl ul li {
 	display:block;
-	line-height: 1.7rem
+	line-height: 1.4
 }
 .main-menu-ovrl ul li a {
-	font-weight:300;
+	font-weight:400;
 	display:block;
 	color:black;
 	font-size:1.5rem;

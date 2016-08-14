@@ -8,9 +8,9 @@ var jcw = (function ($) {
     var
     mainMenu = function () {
         //实现点击其他按钮，菜单栏关闭
-        document.onclick = function(e){
-            menuOvrl.removeClass('open');
-        }
+        //document.onclick = function(e){
+        //    menuOvrl.removeClass('open');
+        //}
         var menuOvrl = $('.js-main-menu-ovrl');
         $('.js-main-menu-open').on('click', function (e) {
             e.preventDefault();
@@ -66,9 +66,16 @@ var jcw = (function ($) {
             result_template: '<a href="{{link}}"><h2><i class="fa fa-fw fa-dot-circle-o"></i> {{title}}</h2></a>',
             onKeyUp: true
         });
+        //实现点击空白处关闭搜索框
+        document.onclick = function(e){
+            $('.js-main-menu-ovrl').removeClass('open');
+            ghostHunter.clear();
+            $bigSearchContainer.removeClass('open');
+        }
         $openSearchBtn.on('click', function (e) {
             e.preventDefault();
             $bigSearchContainer.addClass('open');
+            e = e||event; stopFunc(e);
             $(window).scrollTop(0);
             $bigSearchContainer.find('input[type=text]').focus();
         });
@@ -76,6 +83,9 @@ var jcw = (function ($) {
             e.preventDefault();
             ghostHunter.clear();
             $bigSearchContainer.removeClass('open');
+        });
+        $('.big-search-container').on('click',function(e){
+            e = e||event; stopFunc(e);
         });
     },
 
