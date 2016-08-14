@@ -7892,14 +7892,7 @@ body {
 	-ms-transition:transform .5s;
 	transition:transform .5s
 }
-@media screen and (min-width: 48em) {
-	.reading-time-indicator {
-	top:0.7375rem;
-	left:0.7375rem;
-	right:0.7375rem;
-	width:calc(100% - 25px);
-}
-}.reading-time-indicator.visible {
+.reading-time-indicator.visible {
 	-webkit-transform:translate3d(0, 0, 0);
 	-ms-transform:translate3d(0, 0, 0);
 	transform:translate3d(0, 0, 0)
