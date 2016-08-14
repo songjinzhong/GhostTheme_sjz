@@ -42,7 +42,7 @@ h1 {
 	margin:0.67em 0
 }
 mark {
-	background:#ff0;
+	background:#fdffb6;
 	color:#000
 }
 small {
@@ -6052,7 +6052,7 @@ h1 {
 	font-size:3.375rem
 }
 h2 {
-	font-size:1.875rem
+	font-size:1.575rem
 }
 h3 {
 	font-size:1.6875rem
@@ -6220,7 +6220,7 @@ h1 {
 	font-size:4rem
 }
 h2 {
-	font-size:2.5rem
+	font-size:2.1rem
 }
 h3 {
 	font-size:2rem
@@ -7226,7 +7226,7 @@ body {
 }
 @media screen and (min-width: 29.25em) {
 	.main-header h1 {
-	font-size:3.0rem;
+	font-size:2.7rem;
 }
 	.main-header h2{
 		font-size: 1.375rem;
@@ -7238,7 +7238,7 @@ body {
 }
 @media screen and (min-width: 48em) {
 	.main-header h1 {
-		font-size:4.2rem;
+		font-size:3.5rem;
 	}
 	.main-header h2{
 		font-size: 1.375rem;
@@ -7293,7 +7293,7 @@ body {
 }
 @media screen and (min-width: 48em) {
 	.home-template .post-title,.tag-template .post-title,.author-template .post-title {
-	font-size:2.625rem;
+	font-size:2.1rem;
 	line-height:1.3;
 }
 }.home-template .post-meta,.tag-template .post-meta,.author-template .post-meta {
@@ -8005,19 +8005,19 @@ body {
   margin-bottom: 0.875rem;
 }
 .post-template .post-view-header .post-header-content h1 {
-	font-size: 1.9rem;
+	font-size: 1.8rem;
 	line-height: 1.2;
 }
 /*this is my min and max css*/
 @media screen and (min-width: 30em) {
 	.post-template .post-view-header .post-header-content h1 {
-	font-size: 2.5rem;
+	font-size: 2.3rem;
 	line-height: 1.2;
 }
 }
 @media screen and (min-width: 48em) {
 	.post-template .post-view-header .post-header-content h1 {
-		font-size: 3.3rem;
+		font-size: 3.1rem;
 		line-height: 1.2;
 	}
 }
