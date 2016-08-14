@@ -7,7 +7,7 @@ var jcw = (function ($) {
     }
     var
     mainMenu = function () {
-        //实现点击其他按钮，菜单栏关闭
+        //实现点击其他按钮，菜单栏关闭，方法挪到后面
         //document.onclick = function(e){
         //    menuOvrl.removeClass('open');
         //}
