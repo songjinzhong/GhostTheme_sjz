@@ -1,7 +1,7 @@
 ### sjz Ghost Theme
 
 #### Demo:
-[http://blog.yuren.space/](http://blog.yuren.space/)
+[http://blog.songjz.cn/](http://blog.songjz.cn/)
 
 sjz theme is a free open source Ghost theme from abc Theme,You can find it from [this link](https://github.com/juliancwirko/abc) at Github. (MIT license)
 
